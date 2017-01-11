@@ -1,0 +1,6 @@
+/node_modules
+/public/js/*
+!/public/js/src
+/public/css/*
+!/public/css/src
+public/fonts/*

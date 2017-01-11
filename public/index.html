@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache" ng-app="todoapp">
+  <head>
+    <title>TODOAPP</title>
+    <base href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="row" ng-controller="HeaderCtrl">
+        <nav class="col-lg-12">
+          <ul class="nav nav-pills">
+            <li ng-show="$root.status.isLoggedIn" ng-class="{active: isActive('/lists')}"><a href="#/lists"><i class="fa fa-list" title="Lists"></i><span class="hidden-sm">&nbsp; Lists</span></a></li>
+            <li ng-class="{active: isActive('/login')}" ng-show="!$root.status.isLoggedIn"><a href="#/login"><i class="fa fa-sign-in" title="Login"></i><span class="hidden-sm">&nbsp; Login</span></a></li>
+            <li ng-class="{active: isActive('/register')}" ng-show="!$root.status.isLoggedIn"><a href="#/register"><i class="fa fa-user-plus" title="Register"></i><span class="hidden-sm">&nbsp; Register</span></a></li>
+            <li ng-show="$root.status.isLoggedIn"><a href="#/" ng-click="logout()"><i class="fa fa-sign-out" title="Logout"></i><span class="hidden-sm">&nbsp; Logout</span></a></li>
+            <li class="pull-right">
+              <div class="big" ng-show="!$root.status.isLoggedIn">Not logged in</div>
+              <div class="big" ng-show="$root.status.isLoggedIn">Logged in as {{$root.status.username}}</div>
+            </li>
+          </ul>
+        </nav>
+        <div class="alert alert-success ng-cloak" ng-show="undefined !== $root.flash.success" role="alert">{{ $root.flash.success }}</div>
+        <div class="alert alert-warning ng-cloak" ng-show="undefined !== $root.flash.warning" role="alert">{{ $root.flash.warning }}</div>
+        <div class="alert alert-danger ng-cloak" ng-show="undefined !== $root.flash.warning" role="alert">{{ $root.flash.danger }}</div>
+      </header>
+      <main class="row">
+        <ng-view class="col-lg-12"></ng-view>
+      </main>
+      <footer class="row text-center"><small>Copyright &copy; 2016 Whoever</small></footer>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

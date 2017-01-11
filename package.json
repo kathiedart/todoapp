@@ -1,0 +1,28 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "to do",
+  "scripts": {
+    "build": "browserify -d public/js/src/index.js -o public/js/index.js",
+    "start": "node --harmony app/server.js"
+  },
+  "keywords": [],
+  "author": "Kathie Dart <npm@kathiedart.uk>",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "browserify-shim": "^3.8.10"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "body-parser": "^1.14.1",
+    "bootstrap": "^3.3.7",
+    "client-sessions": "^0.7.0",
+    "express": "^4.13.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.0",
+    "mongoose": "^4.2.3",
+    "password-hash": "^1.2.2"
+  }
+}

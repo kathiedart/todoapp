@@ -4,7 +4,9 @@
   "description": "to do",
   "scripts": {
     "build": "browserify -d public/js/src/index.js -o public/js/index.js",
-    "start": "node --harmony app/server.js"
+    "start": "node --harmony app/server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "Kathie Dart <npm@kathiedart.uk>",
@@ -23,6 +25,8 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.0",
     "mongoose": "^4.2.3",
-    "password-hash": "^1.2.2"
-  }
+    "password-hash": "^1.2.2",
+    "snyk": "^1.41.1"
+  },
+  "snyk": true
 }

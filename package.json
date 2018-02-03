@@ -9,7 +9,7 @@
     "prepublish": "npm run snyk-protect"
   },
   "keywords": [],
-  "author": "Kathie Dart <npm@kathiedart.uk>",
+  "author": "Dan Dart <npm@dandart.co.uk>",
   "license": "ISC",
   "devDependencies": {
     "browserify": "^15.2.0",
@@ -26,7 +26,7 @@
     "jquery": "^3.3.1",
     "mongoose": "^5.0.2",
     "password-hash": "^1.2.2",
-    "popper.js": "^1.12.9",
+    "popper.js": "^1.13.0",
     "snyk": "^1.69.5"
   },
   "snyk": true

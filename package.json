@@ -27,7 +27,7 @@
     "mongoose": "^5.1.4",
     "password-hash": "^1.2.2",
     "popper.js": "^1.14.3",
-    "snyk": "^1.82.1"
+    "snyk": "^1.110.2"
   },
   "snyk": true
 }

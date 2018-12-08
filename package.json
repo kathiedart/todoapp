@@ -12,7 +12,7 @@
   "author": "Dan Dart <npm@dandart.co.uk>",
   "license": "ISC",
   "devDependencies": {
-    "browserify": "^16.2.2",
+    "browserify": "^15.2.0",
     "browserify-shim": "^3.8.14"
   },
   "dependencies": {

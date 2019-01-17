@@ -16,7 +16,7 @@
     "browserify-shim": "^3.8.14"
   },
   "dependencies": {
-    "angular": "^1.7.1",
+    "angular": "^1.7.6",
     "angular-route": "^1.7.1",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.1.1",

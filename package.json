@@ -24,10 +24,10 @@
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
-    "mongoose": "^5.8.0",
+    "mongoose": "^5.8.10",
     "password-hash": "^1.2.2",
-    "popper.js": "^1.16.0",
-    "snyk": "^1.258.1"
+    "popper.js": "^1.16.1",
+    "snyk": "^1.288.0"
   },
   "snyk": true
 }
